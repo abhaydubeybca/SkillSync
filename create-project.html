@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync | Create Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">SkillSync</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore-projects.html">Explore Projects</a>
+            <a href="find-teammates.html">Find Teammates</a>
+            <a href="team-dashboard.html">Dashboard</a>
+            <a href="create-project.html" class="active">Create Project</a>
+            <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div class="nav-user">
+            <a href="#" class="nav-login">Sign In</a>
+            <button class="btn btn-primary">Sign Up</button>
+            <span class="user-avatar">👩🏽‍💻 BCA '26</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- HERO HEADER WITH PROGRESS STEPS -->
+        <header class="page-hero">
+            <span class="pill purple-pill">⭐ BCA Capstone & Hackathon Matcher</span>
+            <h1>Post a New Project & Assemble Your Team</h1>
+            <p class="subtitle">Define your project vision, existing skills, and team gaps to receive tailored teammate suggestions across collegiate innovators.</p>
+
+            <!-- Multi-step Indicator -->
+            <div class="step-tracker">
+                <span class="step-pill active-step">1. Project Scope</span>
+                <span class="step-pill active-step">2. Skill Matrix</span>
+                <span class="step-pill active-step">3. Commitment</span>
+                <span class="step-pill green-step">⚡ Algorithmic Matching Ready</span>
+            </div>
+        </header>
+
+        <!-- MAIN LAYOUT (FORM + LIVE PREVIEW SIDEBAR) -->
+        <div class="layout-grid">
+
+            <!-- LEFT FORM COLUMN -->
+            <main class="form-area">
+
+                <!-- SECTION 1: PROJECT OVERVIEW -->
+                <section class="card">
+                    <div class="card-header">
+                        <h2><span class="icon-box">📁</span> 1. Project Overview & Objectives</h2>
+                        <span class="step-tag">Step 1/3</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Project Title *</label>
+                        <input type="text" value="Smart Campus Resource Hub" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tagline / Short Hook *</label>
+                        <input type="text" value="Real-time lab booking and automated hardware inventory for collegiate tech students." class="form-control">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Category & Domain *</label>
+                            <select class="form-control">
+                                <option>Web Application</option>
+                                <option>Mobile Application</option>
+                                <option>AI / Machine Learning</option>
+                                <option>IoT & Embedded Hardware</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Academic Context</label>
+                            <select class="form-control">
+                                <option>BCA Final Capstone '25</option>
+                                <option>B.Tech Final Year</option>
+                                <option>Hackathon Project</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Problem Statement & Expected Deliverables</label>
+                        <textarea class="form-control" rows="4">Currently, students in computer engineering and science labs spend 30+ minutes queuing for IoT kits and CPU node reservations. We are architecting a zero-friction queue dispenser with RFID validation, GraphQL telemetry feeds, and intuitive room status monitors.</textarea>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: SKILL MATRIX & TEAM NEEDS -->
+                <section class="card">
+                    <div class="card-header">
+                        <h2><span class="icon-box">📊</span> 2. Skill Matrix & Team Needs</h2>
+                        <span class="step-tag">Step 2/3</span>
+                    </div>
+
+                    <!-- Skills Already Have -->
+                    <div class="form-group">
+                        <label>● Skills We Already Have in The Team <small class="text-muted">(Click to toggle/remove)</small></label>
+                        <div class="tags-input-container">
+                            <span class="tag">React.js <span class="close-x">✕</span></span>
+                            <span class="tag">Tailwind CSS <span class="close-x">✕</span></span>
+                            <span class="tag">Figma (UI/UX) <span class="close-x">✕</span></span>
+                            <input type="text" placeholder="+ Add skill & press enter" class="inline-input">
+                        </div>
+                    </div>
+
+                    <!-- Skills Actively Looking For -->
+                    <div class="form-group">
+                        <label>● Skills We Are Actively Looking For * <small class="purple-text">Core matching triggers</small></label>
+                        <div class="tags-input-container highlight-container">
+                            <span class="tag purple-tag">⚡ Node.js <span class="close-x">✕</span></span>
+                            <span class="tag purple-tag">⚡ Express.js <span class="close-x">✕</span></span>
+                            <span class="tag purple-tag">⚡ PostgreSQL <span class="close-x">✕</span></span>
+                            <span class="tag purple-tag">⚡ Docker <span class="close-x">✕</span></span>
+                            <span class="tag purple-tag">⚡ AWS Architecture <span class="close-x">✕</span></span>
+                            <input type="text" placeholder="+ Add missing skill..." class="inline-input">
+                        </div>
+                        
+                        <div class="recommended-skills">
+                            <small>Recommended additions:</small>
+                            <span class="add-chip">+ GraphQL</span>
+                            <span class="add-chip">+ Redis</span>
+                            <span class="add-chip">+ Python / FastAPI</span>
+                            <span class="add-chip">+ Next.js</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-center">
+                        <!-- Additional Teammates Counter -->
+                        <div class="form-group">
+                            <label>Additional Teammates Needed</label>
+                            <div class="counter-control">
+                                <button class="btn-counter">-</button>
+                                <span class="counter-value">3</span>
+                                <button class="btn-counter">+</button>
+                                <span class="capacity-status">1 Current Lead (Capacity: 4 Total)</span>
+                            </div>
+                        </div>
+
+                        <!-- Target Roles Required -->
+                        <div class="form-group">
+                            <label>Target Roles Required</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item"><input type="checkbox" checked> Backend Dev</label>
+                                <label class="checkbox-item"><input type="checkbox" checked> Database Architect</label>
+                                <label class="checkbox-item"><input type="checkbox" checked> DevOps / Cloud</label>
+                                <label class="checkbox-item"><input type="checkbox"> UI/UX Designer</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: COMMITMENT & LOGISTICS -->
+                <section class="card">
+                    <div class="card-header">
+                        <h2><span class="icon-box">📅</span> 3. Commitment & Schedule Logistics</h2>
+                        <span class="step-tag">Step 3/3</span>
+                    </div>
+
+                    <div class="form-row-3">
+                        <div class="form-group">
+                            <label>Weekly Commitment</label>
+                            <select class="form-control">
+                                <option>10–15 hrs / week (Standard)</option>
+                                <option>< 10 hrs / week (Part-time)</option>
+                                <option>30+ hrs / week (Hackathon Sprint)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Collaboration Mode</label>
+                            <select class="form-control">
+                                <option>Hybrid (Online + Campus Labs)</option>
+                                <option>100% Remote / Discord</option>
+                                <option>In-Person Campus Only</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Target Timeline</label>
+                            <select class="form-control">
+                                <option>1 Semester (14 wks)</option>
+                                <option>Hackathon (48 Hours)</option>
+                                <option>Full Year Capstone</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="pledge-box">
+                        <label class="checkbox-item">
+                            <input type="checkbox" checked> 
+                            <span><strong>Collegiate Integrity Pledge:</strong> I confirm this project adheres to our department's capstone collaboration guidelines. All project teammates will receive equal academic attribution upon milestone delivery.</span>
+                        </label>
+                    </div>
+                </section>
+
+                <!-- FORM ACTIONS -->
+                <div class="form-actions">
+                    <button class="btn btn-outline">💾 Save Draft</button>
+                    <button class="btn btn-outline">⚡ Quick Test</button>
+                    <button class="btn btn-primary btn-large">🚀 Publish Project & Find Teammates</button>
+                </div>
+
+            </main>
+
+
+            <!-- RIGHT SIDEBAR: REAL-TIME CARD PREVIEW -->
+            <aside class="sidebar">
+
+                <!-- Real-Time Project Card Preview -->
+                <div class="sidebar-card">
+                    <div class="preview-header">
+                        <span class="dot-live">● Real-Time Project Card Preview</span>
+                        <span class="pill blue-pill">Live Simulation</span>
+                    </div>
+
+                    <div class="preview-card">
+                        <div class="card-pills">
+                            <span class="pill blue-pill">Web Application</span>
+                            <span class="pill gray-pill">10-15 hrs/wk</span>
+                            <span class="pill green-pill match-badge">⚡ 96% Fit</span>
+                        </div>
+
+                        <h3>Smart Campus Resource Hub</h3>
+                        <p class="preview-desc">Real-time lab booking and automated hardware inventory for collegiate tech students.</p>
+
+                        <!-- Talent Pool Density Bar -->
+                        <div class="density-box">
+                            <div class="density-title">
+                                <span>📈 Algorithmic Talent Pool Density</span>
+                                <strong>38 Peers Online</strong>
+                            </div>
+                            <div class="density-bars">
+                                <span class="bar h1"></span>
+                                <span class="bar h3"></span>
+                                <span class="bar h5 active-bar"></span>
+                                <span class="bar h2"></span>
+                                <span class="bar h4"></span>
+                                <span class="bar h6 active-bar"></span>
+                            </div>
+                        </div>
+
+                        <!-- Missing Roles Needed -->
+                        <div class="missing-roles">
+                            <span class="label red-text">MISSING ROLES NEEDED <small>Critical matches</small></span>
+                            <div class="tags-row">
+                                <span class="tag red-tag">Node.js</span>
+                                <span class="tag red-tag">PostgreSQL</span>
+                                <span class="tag red-tag">Docker</span>
+                                <span class="tag red-tag">AWS</span>
+                            </div>
+                        </div>
+
+                        <div class="preview-footer">
+                            <div class="avatar-stack">
+                                <span class="avatar">👨🏽‍💻</span>
+                                <small>1 of 4 Filled <br><span>Looking for 3 builders</span></small>
+                            </div>
+                            <a href="#" class="link-btn">View Spec →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Algorithmic Match Guarantee -->
+                <div class="sidebar-card">
+                    <h3>🛡️ Algorithmic Match Guarantee</h3>
+                    <p class="sidebar-desc">Upon publishing, SkillSync immediately indexes your missing skill matrix against 1,400+ active collegiate student profiles and ranks the top 5 complementary contributors for single-click squad invitations.</p>
+                    <div class="guarantee-badges">
+                        <span class="pill green-pill">✔ Zero cold outreach</span>
+                        <span class="pill green-pill">✔ Institutional verification</span>
+                    </div>
+                </div>
+
+                <!-- Available Peer Matches -->
+                <div class="sidebar-card">
+                    <div class="card-header-sm">
+                        <h3>Available Peer Matches</h3>
+                        <a href="#" class="link-btn">Live Campus Feed</a>
+                    </div>
+
+                    <div class="peer-item">
+                        <div class="avatar-sm">👩🏻‍💻</div>
+                        <div>
+                            <strong>Priya S. (BCA '25)</strong>
+                            <small>Docker • AWS • Express</small>
+                        </div>
+                        <span class="pill green-pill">93% Fit</span>
+                    </div>
+
+                    <div class="peer-item">
+                        <div class="avatar-sm">👨🏼‍💻</div>
+                        <div>
+                            <strong>Marcus L. (CS '25)</strong>
+                            <small>PostgreSQL • Redis • Node.js</small>
+                        </div>
+                        <span class="pill green-pill">89% Fit</span>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <strong>SkillSync</strong>
+                <p>Connecting university builders, designers, and programmers for hackathons and academic capstone achievements.</p>
+                <span class="pill purple-pill" style="margin-top: 10px;">BCA Capstone & Hackathon Hub</span>
+            </div>
+            <div class="footer-col">
+                <strong>Explore Platform</strong>
+                <a href="explore-projects.html">Explore Projects</a>
+                <a href="find-teammates.html">Find Teammates</a>
+                <a href="#">Post New Project</a>
+                <a href="#">Matching Algorithm</a>
+            </div>
+            <div class="footer-col">
+                <strong>Student Workspace</strong>
+                <a href="#">Squad Dashboard</a>
+                <a href="#">Skill Matrix Profile</a>
+                <a href="#">BCA Project Showcase</a>
+                <a href="#">Mentorship & Reviews</a>
+            </div>
+            <div class="footer-col">
+                <strong>College Network</strong>
+                <p>Verified collegiate community adhering to institutional standards and open-source collaboration.</p>
+                <span class="pill blue-pill" style="margin-top: 10px;">College BCA Showcase 2025</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

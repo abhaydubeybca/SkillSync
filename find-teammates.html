@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync | Find Teammates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">SkillSync</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore-projects.html">Explore Projects</a>
+            <a href="find-teammates.html" class="active">Find Teammates</a>
+            <a href="team-dashboard.html">Dashboard</a>
+            <a href="create-project.html">Create Project</a>
+            <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div class="nav-user">
+            <a href="#" class="nav-login">Sign In</a>
+            <button class="btn btn-primary">Sign Up</button>
+            <span class="user-avatar">👩🏽‍💻 BCA '26</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- PAGE HEADER -->
+        <header class="page-header">
+            <div>
+                <span class="pill purple-pill">ACTIVE SQUAD SEARCH • Capstone BCA 2025</span>
+                <h1>Matching Candidates for: <span class="highlight">Smart Campus App</span></h1>
+                <p class="subtitle">Target Deficit Roles: Backend Architecture, Database Schema, Cloud Deployment</p>
+            </div>
+            <div class="header-right">
+                <span class="squad-status">👥 Current Squad: <strong>2/4 Filled</strong></span>
+                <button class="btn btn-outline">⚙️ Refine Criteria</button>
+            </div>
+        </header>
+
+        <!-- FILTERS BAR -->
+        <section class="filter-section">
+            <div class="filter-chips">
+                <span class="filter-label">Filters:</span>
+                <span class="chip">Stack Deficits: <strong>Node.js, PostgreSQL, Docker</strong> <span class="close-x">✕</span></span>
+                <span class="chip dropdown">Availability: <strong>≥ 10 hrs/wk</strong> ▼</span>
+                <span class="chip dropdown">Program: <strong>BCA, B.Tech, MCA</strong> ▼</span>
+                <a href="#" class="reset-link">Reset All</a>
+            </div>
+
+            <div class="notice-banner">
+                <span>✨ <strong>Transparency Notice:</strong> SkillSync match scores are heuristic recommendations based on complementary tech stack synergy and schedule alignment. Verify through direct dialogue.</span>
+                <a href="#" class="info-link">How scoring works ↗</a>
+            </div>
+        </section>
+
+        <!-- MAIN LAYOUT (2 COLUMNS) -->
+        <div class="layout-grid">
+
+            <!-- LEFT COLUMN: CANDIDATE LIST -->
+            <main class="candidate-list">
+                <div class="results-bar">
+                    <h2>Recommended Builders <span class="badge-count">3 high matches</span></h2>
+                    <div class="sort-wrapper">
+                        <span>Sort by:</span>
+                        <select class="sort-select">
+                            <option>Complementary Score ▼</option>
+                            <option>Availability</option>
+                            <option>Experience Level</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- CANDIDATE CARD 1 -->
+                <article class="candidate-card">
+                    <div class="card-header">
+                        <div class="user-info">
+                            <div class="avatar">👨🏽‍💻</div>
+                            <div>
+                                <h3>Aarav Patel <span class="role-tag">B.Tech CSE • 3rd Year</span></h3>
+                                <p class="verified-text">✔ Verified GitHub builder • 14 Pull Requests merged</p>
+                            </div>
+                        </div>
+                        <span class="pill green-pill match-badge">⚡ 96% Synergy</span>
+                    </div>
+
+                    <div class="recommendation-box">
+                        💡 <strong>Why Recommended:</strong> Perfect complement. Supplies missing <strong>Node.js & PostgreSQL</strong> backend stack while matching your Saturday campus lab availability.
+                    </div>
+
+                    <div class="skills-section">
+                        <span class="section-label">VERIFIED SKILL STACK</span>
+                        <div class="tags-row">
+                            <span class="tag active-tag">Node.js (Advanced)</span>
+                            <span class="tag active-tag">PostgreSQL (Advanced)</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">Docker (Intermediate)</span>
+                            <span class="tag">Prisma ORM</span>
+                        </div>
+                    </div>
+
+                    <div class="meta-info-grid">
+                        <div>
+                            <span class="meta-label">🕒 AVAILABILITY</span>
+                            <p>15 hrs/week • Weekday evenings & weekends</p>
+                        </div>
+                        <div>
+                            <span class="meta-label">📁 PAST CAPSTONE / PROJECTS</span>
+                            <p>Campus Library API, Payment Gateway Webhook</p>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn btn-primary">📩 Invite to Team</button>
+                        <button class="btn btn-outline">View Full Profile</button>
+                        <a href="#" class="dock-link">⚖️ Compare in Dock</a>
+                    </div>
+                </article>
+
+                <!-- CANDIDATE CARD 2 -->
+                <article class="candidate-card">
+                    <div class="card-header">
+                        <div class="user-info">
+                            <div class="avatar">👩🏻‍💻</div>
+                            <div>
+                                <h3>Meera Krishnan <span class="role-tag">MCA • 1st Year</span></h3>
+                                <p class="verified-text">✔ AWS Certified Cloud Practitioner • SQL Specialist</p>
+                            </div>
+                        </div>
+                        <span class="pill green-pill match-badge">⚡ 91% Synergy</span>
+                    </div>
+
+                    <div class="recommendation-box">
+                        💡 <strong>Why Recommended:</strong> Strong Database & Cloud focus: Experienced with relational schema optimization and automated AWS EC2 deployments.
+                    </div>
+
+                    <div class="skills-section">
+                        <span class="section-label">VERIFIED SKILL STACK</span>
+                        <div class="tags-row">
+                            <span class="tag active-tag">PostgreSQL</span>
+                            <span class="tag active-tag">Python / FastAPI</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Redis Caching</span>
+                            <span class="tag">AWS EC2 & S3</span>
+                        </div>
+                    </div>
+
+                    <div class="meta-info-grid">
+                        <div>
+                            <span class="meta-label">🕒 AVAILABILITY</span>
+                            <p>12 hrs/week • Weekends heavy & Sunday sprints</p>
+                        </div>
+                        <div>
+                            <span class="meta-label">📁 PAST CAPSTONE / PROJECTS</span>
+                            <p>High-concurrency Student Voting System on FastAPI</p>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn btn-primary">📩 Invite to Team</button>
+                        <button class="btn btn-outline">View Profile</button>
+                        <a href="#" class="dock-link">⚖️ Compare in Dock</a>
+                    </div>
+                </article>
+
+                <!-- CANDIDATE CARD 3 -->
+                <article class="candidate-card">
+                    <div class="card-header">
+                        <div class="user-info">
+                            <div class="avatar">👨🏼‍💻</div>
+                            <div>
+                                <h3>Rohan Deshmukh <span class="role-tag">BCA • 3rd Year</span></h3>
+                                <p class="verified-text">✔ Fast API Prototypes • Agile Scrum Experience</p>
+                            </div>
+                        </div>
+                        <span class="pill blue-pill match-badge">⚡ 85% Synergy</span>
+                    </div>
+
+                    <div class="recommendation-box">
+                        💡 <strong>Why Recommended:</strong> Solid backend fundamentals with practical experience in <strong>MongoDB & Node.js</strong>, takes care of rapid REST API endpoint generation.
+                    </div>
+
+                    <div class="skills-section">
+                        <span class="section-label">VERIFIED SKILL STACK</span>
+                        <div class="tags-row">
+                            <span class="tag active-tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Git Workflows</span>
+                            <span class="tag">Jest Unit Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="meta-info-grid">
+                        <div>
+                            <span class="meta-label">🕒 AVAILABILITY</span>
+                            <p>10 hrs/week • Flexible scheduling</p>
+                        </div>
+                        <div>
+                            <span class="meta-label">📁 PAST CAPSTONE / PROJECTS</span>
+                            <p>E-Commerce Microservice Catalog with Node/Mongo</p>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="btn btn-primary">📩 Invite to Team</button>
+                        <button class="btn btn-outline">View Profile</button>
+                        <a href="#" class="dock-link">⚖️ Compare in Dock</a>
+                    </div>
+                </article>
+
+            </main>
+
+
+            <!-- RIGHT COLUMN: DIAGNOSTICS SIDEBAR -->
+            <aside class="sidebar">
+
+                <!-- DIAGNOSTICS WIDGET -->
+                <div class="sidebar-card">
+                    <div class="widget-header">
+                        <h3>Synergy Diagnostics</h3>
+                        <span class="pill blue-pill">Live Model</span>
+                    </div>
+                    <p class="widget-subtext">Coverage analysis for <strong>Smart Campus App</strong> when combining your existing frontend skills (React+Tailwind) with candidate candidates.</p>
+
+                    <!-- CIRCULAR GRAPH REPRESENTATION -->
+                    <div class="chart-container">
+                        <div class="donut-chart">
+                            <div class="donut-inner">
+                                <strong>85%</strong>
+                                <small>Coverage</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <h2>85%</h2>
+                            <small>Backend Tech Coverage</small>
+                        </div>
+                        <div class="stat-box">
+                            <h2>70%</h2>
+                            <small>Schedule Synchrony</small>
+                        </div>
+                    </div>
+
+                    <div class="metric-line">
+                        <span>Relational DB Requirements</span>
+                        <strong class="green-text">100% Satisfied</strong>
+                    </div>
+                    <div class="metric-line">
+                        <span>DevOps & Cloud Host</span>
+                        <strong class="green-text">82% Satisfied</strong>
+                    </div>
+                </div>
+
+                <!-- SIDE-BY-SIDE DOCK WIDGET -->
+                <div class="sidebar-card">
+                    <div class="widget-header">
+                        <h3>📊 Side-by-Side Dock</h3>
+                        <span class="count-tag">2 Selected</span>
+                    </div>
+                    <p class="widget-subtext">Evaluating potential team trade-offs between leading contenders:</p>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>METRIC</th>
+                                <th>Aarav</th>
+                                <th>Meera</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Synergy Score</td>
+                                <td class="green-text">96%</td>
+                                <td class="green-text">91%</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Focus</td>
+                                <td>Node/PostgreSQL</td>
+                                <td>Cloud / Python</td>
+                            </tr>
+                            <tr>
+                                <td>Availability</td>
+                                <td>15 hrs/wk</td>
+                                <td>12 hrs/wk</td>
+                            </tr>
+                            <tr>
+                                <td>Lab Sync Day</td>
+                                <td>Sat • High</td>
+                                <td>Sun • Med</td>
+                            </tr>
+                            <tr>
+                                <td>Docker/DevOps</td>
+                                <td>Mid</td>
+                                <td class="green-text">Advanced</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button class="btn btn-outline full-btn">Expand Full Matrix</button>
+                </div>
+
+                <!-- MATCHING TIP BOX -->
+                <div class="tip-card">
+                    <span class="tip-icon">💡</span>
+                    <p><strong>Matching Tip:</strong> Aarav resolves your immediate database schema need, but Meera offers stronger long-term cloud readiness for final judge evaluations.</p>
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <strong>SkillSync</strong>
+                <p>Connecting university builders, designers, and programmers for hackathons and academic capstone achievements.</p>
+                <span class="pill purple-pill" style="margin-top: 10px;">BCA Capstone & Hackathon Hub</span>
+            </div>
+            <div class="footer-col">
+                <strong>Explore Platform</strong>
+                <a href="explore-projects.html">Explore Projects</a>
+                <a href="find-teammates.html">Find Teammates</a>
+                <a href="#">Post New Project</a>
+                <a href="#">Matching Algorithm</a>
+            </div>
+            <div class="footer-col">
+                <strong>Student Workspace</strong>
+                <a href="#">Squad Dashboard</a>
+                <a href="#">Skill Matrix Profile</a>
+                <a href="#">BCA Project Showcase</a>
+                <a href="#">Mentorship & Reviews</a>
+            </div>
+            <div class="footer-col">
+                <strong>College Network</strong>
+                <p>Verified collegiate community adhering to institutional standards and open-source collaboration.</p>
+                <span class="pill blue-pill" style="margin-top: 10px;">College BCA Showcase 2025</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

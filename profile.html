@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync | Student Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">SkillSync</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore-projects.html">Explore Projects</a>
+            <a href="find-teammates.html">Find Teammates</a>
+            <a href="team-dashboard.html">Dashboard</a>
+            <a href="create-project.html">Create Project</a>
+            <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div class="nav-user">
+            <a href="#" class="nav-login">Sign In</a>
+            <button class="btn btn-primary">Sign Up</button>
+            <span class="user-avatar">👩🏽‍💻 BCA '26</span>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+        <!-- HERO PROFILE BANNER -->
+        <header class="profile-hero">
+            <div class="profile-info">
+                <div class="avatar-container">
+                    <div class="avatar">👩🏽‍💻</div>
+                    <span class="online-dot"></span>
+                </div>
+                <div class="profile-details">
+                    <h1>Ananya Sharma</h1>
+                    <div class="badge-row">
+                        <span class="pill green-pill">● Actively Looking for Team</span>
+                        <span class="pill gray-pill">🕒 15 hrs/wk available</span>
+                        <span class="pill gray-pill">🎓 St. Xavier's College • BCA 3rd Year (Final Year)</span>
+                    </div>
+                    <p class="bio">Frontend enthusiast skilled in React & Tailwind CSS. Looking for backend and cloud teammates to build smart campus solutions.</p>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <button class="btn btn-primary">🔍 Find Projects for Me</button>
+                <button class="btn btn-secondary">👤 Invite to Project</button>
+                <button class="btn btn-outline">⚙️ Edit Profile</button>
+            </div>
+        </header>
+
+        <!-- 2-COLUMN MAIN CONTENT -->
+        <div class="profile-grid">
+
+            <!-- LEFT COLUMN -->
+            <aside class="left-column">
+
+                <!-- Technical Skills -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3></> Technical Skills</h3>
+                        <span class="small-label">Self-Assessed</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <strong>React.js</strong>
+                            <span>Advanced • 85%</span>
+                        </div>
+                        <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <strong>Tailwind CSS</strong>
+                            <span>Advanced • 90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="fill green-fill" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <strong>JavaScript / TypeScript</strong>
+                            <span>Intermediate • 75%</span>
+                        </div>
+                        <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <strong>Figma & Wireframing</strong>
+                            <span>Intermediate • 70%</span>
+                        </div>
+                        <div class="progress-bar"><div class="fill" style="width: 70%;"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <strong>REST API Integration</strong>
+                            <span>Intermediate • 65%</span>
+                        </div>
+                        <div class="progress-bar"><div class="fill light-fill" style="width: 65%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Availability Matrix -->
+                <div class="card">
+                    <h3>📅 Availability Matrix</h3>
+                    
+                    <div class="matrix-row">
+                        <span>📅 Weekdays</span>
+                        <span class="badge-tag">6:00 PM - 9:00 PM</span>
+                    </div>
+                    <div class="matrix-row">
+                        <span>📅 Weekends</span>
+                        <span class="badge-tag green-tag">Flexible Hours</span>
+                    </div>
+                    <div class="matrix-row">
+                        <span>🌐 Timezone</span>
+                        <span class="badge-tag">IST (UTC+5:30)</span>
+                    </div>
+                </div>
+
+                <!-- Interests & Domains -->
+                <div class="card">
+                    <h3>🌐 Interests & Domains</h3>
+                    <div class="tag-cloud">
+                        <span class="pill purple-pill">🌐 Web Applications</span>
+                        <span class="pill purple-pill">🎓 EdTech</span>
+                        <span class="pill purple-pill">🏢 Campus Automation</span>
+                        <span class="pill purple-pill">♿ Accessibility</span>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- RIGHT COLUMN -->
+            <main class="right-column">
+
+                <!-- Projects Worked On -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>💻 Projects Worked On</h3>
+                        <span class="small-label">2 Published</span>
+                    </div>
+
+                    <!-- Project 1 -->
+                    <div class="project-box">
+                        <div class="project-header">
+                            <h4>Campus Food Ordering Portal</h4>
+                            <span class="pill purple-pill">Role: Lead Frontend</span>
+                        </div>
+                        <p>Built an intuitive mobile-first web app handling cafeteria queue management and digital lunch ordering with live token tracking.</p>
+                        <div class="project-footer">
+                            <div class="tech-stack">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">WebSockets</span>
+                            </div>
+                            <span class="team-size">👥 4-person team</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-box">
+                        <div class="project-header">
+                            <h4>BCA Lecture Schedule Tracker</h4>
+                            <span class="pill blue-pill">Role: UI/UX & Frontend</span>
+                        </div>
+                        <p>Streamlined timetable tracking and room reallocation alerts for over 180 BCA undergraduate students and faculty staff.</p>
+                        <div class="project-footer">
+                            <div class="tech-stack">
+                                <span class="tag">React</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Figma</span>
+                            </div>
+                            <span class="team-size">👥 3-person team</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Verification Callout -->
+                <div class="card banner-card">
+                    <div class="banner-text">
+                        <span class="pill dark-purple-pill">UPCOMING FEATURE • SkillSync 2.0</span>
+                        <h4>Skill Verification — Coming Soon</h4>
+                        <p>Peer review endorsements, GitHub commit verification, and academic project milestone badges will be available in V2.0.</p>
+                    </div>
+                    <div class="banner-icon">🛡️</div>
+                </div>
+
+                <!-- Project Recommendations -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>✨ Project Recommendations for Ananya</h3>
+                        <span class="small-label green-text">⚡ High Synergy</span>
+                    </div>
+
+                    <div class="recommendations-grid">
+                        
+                        <!-- Recommendation 1 -->
+                        <div class="rec-card">
+                            <div class="rec-meta">
+                                <span class="pill green-pill">⚡ 95% Match</span>
+                                <span class="rec-type">BCA Capstone</span>
+                            </div>
+                            <h4>Smart Campus App</h4>
+                            <p>IoT room bookings and student card tap authentication.</p>
+                            <span class="need-tag">🔍 Needs Frontend Developer</span>
+                            <button class="btn btn-outline full-btn">Review & Apply</button>
+                        </div>
+
+                        <!-- Recommendation 2 -->
+                        <div class="rec-card">
+                            <div class="rec-meta">
+                                <span class="pill green-pill">⚡ 88% Match</span>
+                                <span class="rec-type">Hackathon 2025</span>
+                            </div>
+                            <h4>Student Expense Tracker</h4>
+                            <p>Budget splitting and semester mess fee ledger for hostellers.</p>
+                            <span class="need-tag">🔍 Needs UI/UX Designer</span>
+                            <button class="btn btn-outline full-btn">Review & Apply</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <strong>SkillSync</strong>
+                <p>Connecting university builders, designers, and programmers for hackathons and academic capstone achievements.</p>
+            </div>
+            <div class="footer-col">
+                <strong>Explore Platform</strong>
+                <a href="explore-projects.html">Explore Projects</a>
+                <a href="find-teammates.html">Find Teammates</a>
+                <a href="#">Post New Project</a>
+            </div>
+            <div class="footer-col">
+                <strong>Student Workspace</strong>
+                <a href="#">Squad Dashboard</a>
+                <a href="#">Skill Matrix Profile</a>
+            </div>
+            <div class="footer-col">
+                <strong>College Network</strong>
+                <p>Verified collegiate community adhering to institutional standards.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

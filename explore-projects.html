@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync | Explore Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">SkillSync</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore-projects.html" class="active">Explore Projects</a>
+            <a href="find-teammates.html">Find Teammates</a>
+            <a href="team-dashboard.html">Dashboard</a>
+            <a href="create-project.html">Create Project</a>
+            <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div class="nav-user">
+            <a href="#" class="nav-login">Sign In</a>
+            <button class="btn btn-primary">Sign Up</button>
+            <span class="user-avatar">👩🏽‍💻 BCA '26</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- PAGE HERO HEADER -->
+        <header class="page-hero">
+            <div>
+                <span class="pill purple-pill">Campus Innovation Hub • BCA & B.Tech Capstone Registry</span>
+                <h1>Explore Live Projects</h1>
+                <p class="subtitle">Discover multidisciplinary collegiate projects assembling squads for hackathons, end-semester capstones, and university venture incubators.</p>
+            </div>
+            <div class="hero-actions">
+                <span class="status-indicator">● 63 Active Project Calls</span>
+                <button class="btn btn-primary">+ Post Project</button>
+            </div>
+        </header>
+
+        <!-- SEARCH AND ACTIVE FILTERS -->
+        <section class="search-section">
+            <div class="search-bar-row">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search by project title, tech stack (e.g., React, Python), or domain...">
+                </div>
+                <select class="sort-dropdown">
+                    <option>⚡ Best Skill Match (for You)</option>
+                    <option>Newest First</option>
+                    <option>Most Popular</option>
+                </select>
+            </div>
+
+            <div class="active-filters">
+                <span class="filter-label">ACTIVE FILTERS:</span>
+                <span class="filter-chip">Domain: All <span class="close-x">×</span></span>
+                <span class="filter-chip">Required Skills: React, Node.js <span class="close-x">×</span></span>
+                <span class="filter-chip">Open Positions: > 0 <span class="close-x">×</span></span>
+                <a href="#" class="reset-link">Reset All</a>
+            </div>
+        </section>
+
+        <!-- MAIN LAYOUT (SIDEBAR + GRID) -->
+        <div class="layout-grid">
+
+            <!-- FILTER SIDEBAR -->
+            <aside class="sidebar">
+                <div class="filter-title">Filter By ⚙️</div>
+
+                <!-- Domain Filter -->
+                <div class="filter-group">
+                    <label class="filter-heading">Domain</label>
+                    <label class="checkbox-label"><input type="checkbox" checked> Web Development <span class="count">24</span></label>
+                    <label class="checkbox-label"><input type="checkbox"> AI / Machine Learning <span class="count">18</span></label>
+                    <label class="checkbox-label"><input type="checkbox"> Mobile Applications <span class="count">12</span></label>
+                    <label class="checkbox-label"><input type="checkbox"> IoT & Embedded Hardware <span class="count">8</span></label>
+                    <label class="checkbox-label"><input type="checkbox"> Cloud Architecture & DevOps <span class="count">5</span></label>
+                </div>
+
+                <!-- Skills Needed Filter -->
+                <div class="filter-group">
+                    <label class="filter-heading">Skills Needed</label>
+                    <div class="skill-pills">
+                        <span class="pill-chip active">React</span>
+                        <span class="pill-chip active">Node.js</span>
+                        <span class="pill-chip">Python</span>
+                        <span class="pill-chip">Figma</span>
+                        <span class="pill-chip">Flutter</span>
+                        <span class="pill-chip">PostgreSQL</span>
+                        <span class="pill-chip">MongoDB</span>
+                        <span class="pill-chip">AWS</span>
+                    </div>
+                </div>
+
+                <!-- Difficulty Filter -->
+                <div class="filter-group">
+                    <label class="filter-heading">Difficulty / Scope</label>
+                    <label class="radio-label"><input type="radio" name="scope"> Beginner / Academic Intro</label>
+                    <label class="radio-label"><input type="radio" name="scope" checked> Intermediate Capstone</label>
+                    <label class="radio-label"><input type="radio" name="scope"> Advanced / Hackathon Sprint</label>
+                </div>
+
+                <!-- Weekly Commitment -->
+                <div class="filter-group">
+                    <label class="filter-heading">Weekly Commitment</label>
+                    <label class="checkbox-label"><input type="checkbox"> < 10 hrs / week (Part-time)</label>
+                    <label class="checkbox-label"><input type="checkbox" checked> 10 - 20 hrs / week (Standard)</label>
+                    <label class="checkbox-label"><input type="checkbox"> Full Hackathon Sprint (30–40h)</label>
+                </div>
+
+                <!-- University Verification Info Box -->
+                <div class="info-box">
+                    <strong>🛡️ University Verified</strong>
+                    <p>All project matches are verified for semester project credits.</p>
+                </div>
+            </aside>
+
+            <!-- MAIN PROJECTS CONTENT -->
+            <main class="content-area">
+                <div class="results-header">
+                    <span>Showing 4 of 63 curated academic initiatives</span>
+                    <div class="view-toggle">
+                        <button class="view-btn active">▦</button>
+                        <button class="view-btn">≡</button>
+                    </div>
+                </div>
+
+                <!-- PROJECTS GRID (2x2) -->
+                <div class="projects-grid">
+
+                    <!-- CARD 1 -->
+                    <article class="project-card">
+                        <div class="card-header">
+                            <div class="author-info">
+                                <div class="avatar">👨🏽‍💻</div>
+                                <div>
+                                    <strong>Rahul Verma</strong>
+                                    <small>BCA 3rd Year • Action Squad</small>
+                                </div>
+                            </div>
+                            <span class="pill green-pill">⚡ 95% Match</span>
+                        </div>
+
+                        <span class="domain-tag">Campus IoT / Web</span>
+                        <h3 class="project-title">Smart Campus App</h3>
+                        <p class="project-desc">All-in-one student utility for bus tracking, cafeteria queue monitor, and lecture room booking across university...</p>
+
+                        <div class="capacity-bar-wrapper">
+                            <div class="capacity-label">
+                                <span>Team Capacity</span>
+                                <strong>2 / 5 Filled (3 Open Positions)</strong>
+                            </div>
+                            <div class="progress-bar"><div class="fill" style="width: 40%;"></div></div>
+                        </div>
+
+                        <div class="skills-block">
+                            <span class="label">EXISTING SQUAD SKILLS</span>
+                            <div class="tag-row">
+                                <span class="tag">React (Frontend)</span>
+                                <span class="tag">Figma (UI/UX)</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-block missing">
+                            <span class="label red-text">⚠️ MISSING REQUIRED SKILLS</span>
+                            <div class="tag-row">
+                                <span class="tag red-tag">Node.js (Backend)</span>
+                                <span class="tag red-tag">PostgreSQL</span>
+                                <span class="tag red-tag">AWS Deploy</span>
+                            </div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn btn-primary">Join Project</button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 2 -->
+                    <article class="project-card">
+                        <div class="card-header">
+                            <div class="author-info">
+                                <div class="avatar">👩🏻‍💻</div>
+                                <div>
+                                    <strong>Priya Nair</strong>
+                                    <small>B.Tech CSE • Urgent Role</small>
+                                </div>
+                            </div>
+                            <span class="pill green-pill">⚡ 94% Skill Match</span>
+                        </div>
+
+                        <span class="domain-tag">AI / NLP Research</span>
+                        <h3 class="project-title">AI Study Assistant & Note Synthesizer</h3>
+                        <p class="project-desc">Automated OCR summarizer and flashcard generator tailored for university lecture notes using localized LLMs...</p>
+
+                        <div class="capacity-bar-wrapper">
+                            <div class="capacity-label">
+                                <span>Team Capacity</span>
+                                <strong>3 / 4 Filled (1 Open Position)</strong>
+                            </div>
+                            <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+                        </div>
+
+                        <div class="featured-role-box">
+                            <span class="role-title">Frontend Developer (React + Tailwind)</span>
+                            <p>Integrate Python FastAPI endpoints into UI. Immediate start.</p>
+                        </div>
+
+                        <div class="skills-block">
+                            <span class="label">REQUIRED STACK</span>
+                            <div class="tag-row">
+                                <span class="tag">Python / PyTorch</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">ChromaDB</span>
+                            </div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn btn-primary">Join Project</button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 3 -->
+                    <article class="project-card">
+                        <div class="card-header">
+                            <div class="author-info">
+                                <div class="avatar">👨🏼‍💻</div>
+                                <div>
+                                    <strong>Devansh Mehta</strong>
+                                    <small>MCA 1st Year • Fast Sprint</small>
+                                </div>
+                            </div>
+                            <span class="pill green-pill">⚡ 87% Match</span>
+                        </div>
+
+                        <span class="domain-tag">Full Stack / Event Tech</span>
+                        <h3 class="project-title">Campus Event & Hackathon Manager</h3>
+                        <p class="project-desc">Real-time registrations, badge QR check-in, and team formation portal for inter-collegiate fests and regional...</p>
+
+                        <div class="capacity-bar-wrapper">
+                            <div class="capacity-label">
+                                <span>Team Capacity</span>
+                                <strong>2 / 4 Filled (2 Open Positions)</strong>
+                            </div>
+                            <div class="progress-bar"><div class="fill" style="width: 50%;"></div></div>
+                        </div>
+
+                        <div class="open-positions-list">
+                            <div class="pos-item">
+                                <strong>Database Specialist</strong>
+                                <span>PostgreSQL + Supabase</span>
+                            </div>
+                            <div class="pos-item">
+                                <strong>UI Designer</strong>
+                                <span>Figma + Webflow</span>
+                            </div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn btn-primary">Join Project</button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 4 -->
+                    <article class="project-card">
+                        <div class="card-header">
+                            <div class="author-info">
+                                <div class="avatar">👩🏽‍💼</div>
+                                <div>
+                                    <strong>Sarah Khan</strong>
+                                    <small>BCA 2nd Year • Capstone 2025</small>
+                                </div>
+                            </div>
+                            <span class="pill green-pill">⚡ 82% Match</span>
+                        </div>
+
+                        <span class="domain-tag">FinTech / OCR Mobile</span>
+                        <h3 class="project-title">Student Expense Tracker & Budget Splitter</h3>
+                        <p class="project-desc">P2P campus expense tracker with UPI receipt OCR parsing and monthly student budget forecasting.</p>
+
+                        <div class="capacity-bar-wrapper">
+                            <div class="capacity-label">
+                                <span>Team Capacity</span>
+                                <strong>1 / 3 Filled (2 Open Positions)</strong>
+                            </div>
+                            <div class="progress-bar"><div class="fill" style="width: 33%;"></div></div>
+                        </div>
+
+                        <div class="open-positions-list">
+                            <div class="pos-item">
+                                <strong>Mobile Dev (Flutter)</strong>
+                                <span>FastAPI / REST API</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <span>Estimated Duration: <strong>6 Weeks Capstone</strong></span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn btn-primary">Join Project</button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="pagination">
+                    <button class="page-btn">Previous</button>
+                    <button class="page-num active">1</button>
+                    <button class="page-num">2</button>
+                    <button class="page-num">3</button>
+                    <span>...</span>
+                    <button class="page-num">16</button>
+                    <button class="page-btn">Next</button>
+                </div>
+            </main>
+
+        </div>
+
+        <!-- BOTTOM CALL TO ACTION BANNER -->
+        <section class="bottom-cta-banner">
+            <div class="cta-content">
+                <span class="cta-tag">🚀 Lead Your Own Venture</span>
+                <h2>Can't find an exact fit for your vision?</h2>
+                <p>Publish your own project proposal in under 3 minutes. Define required roles, match with verified peers, and fast-track your university capstone requirements.</p>
+            </div>
+            <div class="cta-actions">
+                <button class="btn btn-outline-white">How It Works</button>
+                <button class="btn btn-primary-dark">＋ Create Project</button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <strong>SkillSync</strong>
+                <p>Connecting university builders, designers, and programmers for hackathons and academic capstone achievements.</p>
+            </div>
+            <div class="footer-col">
+                <strong>Explore Platform</strong>
+                <a href="explore-projects.html">Explore Projects</a>
+                <a href="find-teammates.html">Find Teammates</a>
+                <a href="#">Post New Project</a>
+            </div>
+            <div class="footer-col">
+                <strong>Student Workspace</strong>
+                <a href="#">Squad Dashboard</a>
+                <a href="#">Skill Matrix Profile</a>
+            </div>
+            <div class="footer-col">
+                <strong>College Network</strong>
+                <p>Verified collegiate community adhering to institutional standards.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

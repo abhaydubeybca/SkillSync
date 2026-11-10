@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync | Team Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">SkillSync</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore-projects.html">Explore Projects</a>
+            <a href="find-teammates.html">Find Teammates</a>
+            <a href="team-dashboard.html" class="active">Dashboard</a>
+            <a href="create-project.html">Create Project</a>
+            <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div class="nav-user">
+            <a href="#" class="nav-login">Sign In</a>
+            <button class="btn btn-primary">Sign Up</button>
+            <span class="user-avatar">👩🏽‍💻 BCA '26</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- DASHBOARD HEADER / PROJECT HERO -->
+        <header class="project-hero">
+            <div class="hero-top">
+                <div class="badge-group">
+                    <span class="pill blue-pill">Cohort Spring 2026</span>
+                    <span class="pill purple-pill">👥 In Formation (4/5 Members Confirmed)</span>
+                    <span class="pill gray-pill">BCA Capstone Team #12</span>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">⚡ Invite Member</button>
+                    <button class="btn btn-outline">✏️ Edit Details</button>
+                    <button class="btn btn-icon">📑</button>
+                </div>
+            </div>
+
+            <h1 class="project-title">Smart Campus App <span class="project-subtitle">IoT Shuttle Tracking & Cafeteria Queues</span></h1>
+            <p class="project-desc">A real-time, low-latency mobile and desk ecosystem streaming campus transport routing, library occupancy, and digital meal pass settlements.</p>
+
+            <div class="hero-stats-bar">
+                <div class="roster-avatars">
+                    <div class="avatar-stack">
+                        <span class="avatar">👨🏽‍💻</span>
+                        <span class="avatar">👩🏽‍💻</span>
+                        <span class="avatar">👨🏼‍💻</span>
+                        <span class="avatar">👩🏻‍💻</span>
+                        <span class="avatar extra-avatar">+1</span>
+                    </div>
+                    <div>
+                        <strong>Team Roster Capacity: 80% Assembled</strong>
+                        <p class="sub-text">4 of 5 Core Competency slots assigned for Mid-Term Sprint</p>
+                    </div>
+                </div>
+
+                <div class="readiness-meter">
+                    <div class="meter-text">
+                        <span>Slot Readiness</span>
+                        <strong>4 / 5 Roles</strong>
+                    </div>
+                    <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- CRITICAL SQUAD GAP ALERT -->
+        <div class="alert-banner">
+            <div class="alert-content">
+                <span class="alert-icon">⚠️</span>
+                <div>
+                    <strong>Critical Squad Gap: Cloud Architecture & DevOps Deployment</strong>
+                    <p>Your squad currently lacks AWS/GCP/CICD, Containerization, and Docker orchestration coverage. We recommend inviting 1 cloud specialist before the Week 6 verification deadline.</p>
+                </div>
+            </div>
+            <button class="btn btn-alert">Find DevOps Candidates →</button>
+        </div>
+
+        <!-- TEAM COMPOSITION & SKILL MATRIX -->
+        <section class="section-block">
+            <div class="section-header">
+                <h2>Team Composition & Skill Matrix</h2>
+                <div class="matrix-legend">
+                    <span class="legend-item"><span class="dot green-dot"></span> 100% Fully Staffed</span>
+                    <span class="legend-item"><span class="dot red-dot"></span> Missing Requirement</span>
+                </div>
+            </div>
+
+            <div class="matrix-grid">
+                <!-- Skill Column 1 -->
+                <div class="matrix-card">
+                    <div class="card-top">
+                        <strong>Frontend UI</strong>
+                        <span class="pill green-pill">100%</span>
+                    </div>
+                    <p class="role-desc">Client-state, routing & design tokens</p>
+                    <div class="assigned-user">
+                        <span class="dot green-dot"></span> Rahul Verma
+                    </div>
+                    <div class="tags-row">
+                        <span class="tag">React JS</span>
+                        <span class="tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Skill Column 2 -->
+                <div class="matrix-card">
+                    <div class="card-top">
+                        <strong>UI/UX Design</strong>
+                        <span class="pill green-pill">100%</span>
+                    </div>
+                    <p class="role-desc">Wireframes, component library & usability</p>
+                    <div class="assigned-user">
+                        <span class="dot green-dot"></span> Sneha Kapoor
+                    </div>
+                    <div class="tags-row">
+                        <span class="tag">Figma / Master</span>
+                        <span class="tag">Prototyping</span>
+                    </div>
+                </div>
+
+                <!-- Skill Column 3 -->
+                <div class="matrix-card">
+                    <div class="card-top">
+                        <strong>Backend API</strong>
+                        <span class="pill green-pill">100%</span>
+                    </div>
+                    <p class="role-desc">REST, WebSockets & Auth security</p>
+                    <div class="assigned-user">
+                        <span class="dot green-dot"></span> Aarav Patel
+                    </div>
+                    <div class="tags-row">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                    </div>
+                </div>
+
+                <!-- Skill Column 4 -->
+                <div class="matrix-card">
+                    <div class="card-top">
+                        <strong>Database & Store</strong>
+                        <span class="pill green-pill">100%</span>
+                    </div>
+                    <p class="role-desc">Schema indexing, migrations, Redis cache</p>
+                    <div class="assigned-user">
+                        <span class="dot green-dot"></span> Meera Krishnan
+                    </div>
+                    <div class="tags-row">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Prisma ORM</span>
+                    </div>
+                </div>
+
+                <!-- Skill Column 5: Missing -->
+                <div class="matrix-card missing-card">
+                    <div class="card-top">
+                        <strong class="red-text">Cloud / DevOps !</strong>
+                        <span class="pill red-pill">0% NEEDED</span>
+                    </div>
+                    <p class="role-desc">AWS EC2, Docker build pipelines, Nginx proxy</p>
+                    <div class="unassigned-box">
+                        <span class="red-text">Unassigned Vacancy</span>
+                        <a href="#" class="link-btn">Auto-match students ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Synthesis Footer -->
+            <div class="synthesis-bar">
+                <div>
+                    <strong>⚡ Skill Coverage Synthesis:</strong> Team possesses 8 of 10 targeted framework disciplines. Overall synergy index rated at <strong>92.4%</strong>.
+                </div>
+                <div class="synthesis-right">
+                    <span class="readiness">Readiness Vector ~~~</span>
+                    <a href="#" class="link-btn">View Full Graph</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONFIRMED BUILDERS (4) -->
+        <section class="section-block">
+            <div class="section-header">
+                <h2>Confirmed Builders (4)</h2>
+                <span class="meta-info">Weekly Team Velocity: <strong>54 Total Committed Hours</strong></span>
+            </div>
+
+            <div class="builders-grid">
+                
+                <!-- Builder 1 -->
+                <article class="builder-card">
+                    <div class="card-top-bar">
+                        <span class="role-badge">Project Lead</span>
+                    </div>
+                    <div class="user-header">
+                        <div class="avatar">👨🏽‍💻</div>
+                        <div>
+                            <h3>Rahul Verma</h3>
+                            <span class="sub-title">Frontend Architect</span>
+                            <small class="institution">BCA '26 • St. Xavier's Institute</small>
+                        </div>
+                    </div>
+                    <div class="meta-row">
+                        <span>Base Commitment:</span>
+                        <strong>15 hrs / wk</strong>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="chip-link">💬 Discord</a>
+                        <a href="#" class="chip-link">📁 rahul_v#1023</a>
+                    </div>
+                    <button class="btn btn-outline full-btn">💼 Portfolio Profile</button>
+                </article>
+
+                <!-- Builder 2 -->
+                <article class="builder-card">
+                    <div class="card-top-bar">
+                        <span class="role-badge blue-badge">Core Designer</span>
+                    </div>
+                    <div class="user-header">
+                        <div class="avatar">👩🏽‍💻</div>
+                        <div>
+                            <h3>Sneha Kapoor</h3>
+                            <span class="sub-title">UI/UX & Interaction</span>
+                            <small class="institution">B.Des '25 • National Design Wing</small>
+                        </div>
+                    </div>
+                    <div class="meta-row">
+                        <span>Base Commitment:</span>
+                        <strong>12 hrs / wk</strong>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="chip-link">💬 Discord</a>
+                        <a href="#" class="chip-link">🎨 figma_designs</a>
+                    </div>
+                    <button class="btn btn-outline full-btn">💼 Portfolio Profile</button>
+                </article>
+
+                <!-- Builder 3 -->
+                <article class="builder-card">
+                    <div class="card-top-bar">
+                        <span class="role-badge">Backend Eng</span>
+                    </div>
+                    <div class="user-header">
+                        <div class="avatar">👨🏼‍💻</div>
+                        <div>
+                            <h3>Aarav Patel</h3>
+                            <span class="sub-title">Node.js & Microservices</span>
+                            <small class="institution">B.Tech CS '25 • Tech Valley Campus</small>
+                        </div>
+                    </div>
+                    <div class="meta-row">
+                        <span>Base Commitment:</span>
+                        <strong>15 hrs / wk</strong>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="chip-link">💬 Discord</a>
+                        <a href="#" class="chip-link">📁 aarav_dev</a>
+                    </div>
+                    <button class="btn btn-outline full-btn">💼 Portfolio Profile</button>
+                </article>
+
+                <!-- Builder 4 -->
+                <article class="builder-card">
+                    <div class="card-top-bar">
+                        <span class="role-badge green-badge">Data Engineer</span>
+                    </div>
+                    <div class="user-header">
+                        <div class="avatar">👩🏻‍💻</div>
+                        <div>
+                            <h3>Meera Krishnan</h3>
+                            <span class="sub-title">PostgreSQL & Schemas</span>
+                            <small class="institution">BCA '26 • City Science Campus</small>
+                        </div>
+                    </div>
+                    <div class="meta-row">
+                        <span>Base Commitment:</span>
+                        <strong>12 hrs / wk</strong>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="chip-link">💬 Discord</a>
+                        <a href="#" class="chip-link">📁 meera_sql</a>
+                    </div>
+                    <button class="btn btn-outline full-btn">💼 Portfolio Profile</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- DASHBOARD BOTTOM GRID (PIPELINE + ACTIVITY) -->
+        <div class="bottom-grid">
+            
+            <!-- LEFT COLUMN: RECRUITMENT PIPELINE -->
+            <section class="dashboard-card">
+                <span class="card-label">RECRUITMENT PIPELINE</span>
+                <h3>Invitations & Join Inquiries</h3>
+
+                <!-- Item 1: Outgoing -->
+                <div class="pipeline-item">
+                    <div class="pipeline-header">
+                        <span class="small-tag">01. Outgoing Squad Invitation</span>
+                        <small class="time">Sent 1 day ago</small>
+                    </div>
+                    <div class="applicant-row">
+                        <div class="avatar-sm">VJ</div>
+                        <div>
+                            <strong>Vikram Joshi</strong>
+                            <p class="sub-desc">Role Offered: DevOps & Cloud Deployment (Docker)</p>
+                            <span class="pill green-pill">96% Skill Fit</span> <small>B.Tech IT '25</small>
+                        </div>
+                        <span class="status-badge pending">🕒 Pending Response ✕</span>
+                    </div>
+                </div>
+
+                <!-- Item 2: Incoming -->
+                <div class="pipeline-item">
+                    <div class="pipeline-header">
+                        <span class="small-tag green-tag">02. Incoming Join Application</span>
+                        <small class="time">Applied 8 hours ago</small>
+                    </div>
+                    <div class="applicant-row">
+                        <div class="avatar-sm">TR</div>
+                        <div>
+                            <strong>Tanvi Roy</strong>
+                            <p class="sub-desc">Quality Assurance & Cypress Automated Testing</p>
+                            <p class="quote">"Would love to create automated test suites, Cypress integration tests, and smoke test scripts for your team."</p>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-outline">Decline</button>
+                        <button class="btn btn-primary">✔ Accept Request</button>
+                    </div>
+                </div>
+
+                <div class="pipeline-footer">
+                    <span>💡 3 other students from your college match this project's open criteria.</span>
+                    <a href="#" class="link-btn">Explore Matches</a>
+                </div>
+            </section>
+
+            <!-- RIGHT COLUMN: ACTIVITY & QUICK LINKS -->
+            <aside class="dashboard-sidebar">
+                
+                <!-- Recent Activity -->
+                <div class="dashboard-card">
+                    <span class="card-label">AUDIT TRAIL</span>
+                    <h3>Recent Team Activity</h3>
+
+                    <ul class="activity-list">
+                        <li>
+                            <span class="activity-icon green-icon">✔</span>
+                            <div>
+                                <strong>Aarav Patel</strong> accepted the Backend Developer invitation.
+                                <small>Yesterday at 4:30 PM</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="activity-icon purple-icon">📝</span>
+                            <div>
+                                <strong>Rahul Verma</strong> updated required database skills to PostgreSQL & Redis.
+                                <small>2 days ago</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="activity-icon blue-icon">🎨</span>
+                            <div>
+                                <strong>Sneha Kapoor</strong> uploaded Figma prototype link to resources.
+                                <small>3 days ago</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="activity-icon blue-icon">📩</span>
+                            <div>
+                                Sent invitation to <strong>Vikram Joshi</strong> for Cloud & DevOps Specialist role.
+                                <small>4 days ago</small>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="center-link">Load older project events →</a>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="dashboard-card">
+                    <h3>Project Quick Links <a href="#" class="add-link">+ Add link</a></h3>
+                    <div class="quick-link-box">
+                        <span></> GitHub / SmartCampus-Core</span>
+                        <span>↗</span>
+                    </div>
+                    <div class="quick-link-box">
+                        <span>🎨 Figma / Handoff Spec Board</span>
+                        <span>↗</span>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <strong>SkillSync</strong>
+                <p>Connecting university builders, designers, and programmers for hackathons and academic capstone achievements.</p>
+                <span class="pill purple-pill" style="margin-top: 10px;">BCA Capstone & Hackathon Hub</span>
+            </div>
+            <div class="footer-col">
+                <strong>Explore Platform</strong>
+                <a href="explore-projects.html">Explore Projects</a>
+                <a href="find-teammates.html">Find Teammates</a>
+                <a href="#">Post New Project</a>
+                <a href="#">Matching Algorithm</a>
+            </div>
+            <div class="footer-col">
+                <strong>Student Workspace</strong>
+                <a href="#">Squad Dashboard</a>
+                <a href="#">Skill Matrix Profile</a>
+                <a href="#">BCA Project Showcase</a>
+                <a href="#">Mentorship & Reviews</a>
+            </div>
+            <div class="footer-col">
+                <strong>College Network</strong>
+                <p>Verified collegiate community adhering to institutional standards and open-source collaboration.</p>
+                <span class="pill blue-pill" style="margin-top: 10px;">College BCA Showcase 2025</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
